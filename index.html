@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">MR INFORMATICA</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Matias Rodriguez</h1>
+            <h2>Tecnico en Programación<br>
+            Soporte especialiazdo IT</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <!--<a href="#"><i class="fa-brands fa-twitter"></i></a>-->
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com/in/matias-rodriguez-7a23551b4"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/+543434567106?text=Contactate"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Actualmente Soporte IT con más de 12 años de experiencia, manejo de servidores, active directory, políticas de seguridad, infraestructura de virtualización y backups. 
+                Soy técnico en Programación, con manejo de técnologias como PHP, HTML, CSS, JavaScript. 
+                </span> </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            27-12-1982
+                        </li><br>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +543434567106
+                        </li><br>
+                        <li>
+                            <strong>Email</strong>
+                            matiasrodriguez0411@gmail.com
+                        </li><br>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <!--
+                            <li>
+                            <strong>Dirección</strong>
+                            lala lala
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>-->
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>FUTBOL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="./doc/CV-mrodriguez.docx" download style="text-decoration: none;">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Active Directory</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Windows Server</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>IT </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Educación Técnica<h4>
+                        <span class="casa">IPET Juan XXII</span>
+                        <span class="fecha">1996 - 2001</span>
+                        <p>Egresado como Técnico en electrónica, haciendo las primeras bases en la programación e informatica, armado de circuitos electrónicos. Programación de PIC, aramado de sistemas de control </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>IT Essentials 5.0</h4>
+                        <span class="casa">Cisco Network Academy</span>
+                        <span class="fecha">2016</span>
+                        <p>Definir la tecnología de la información IT. Protección a equipos y entornos contra accidentes y daños. Armado de equipos de escritorio y laptops. Mantenimiento preventivo. Instalar y desplazaese en un S.O. Configurar una red. Implementar principios de seguridad en hardware y software.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnicatura en Programación</h4>
+                        <span class="casa">Instituto Teclab</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Definir las especificaciones técnicas necesarias para el uso de un programa. Utilizar lenguajes de programación para escribir el código que hará posible que una computadora ejecute una orden en específico. Depurar el código para optimizarlo. Dar mantenimiento a programas informáticos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Soporte IT</h4>
+                        <span class="casa">Johnson Acero S.A.</span>
+                        <span class="fecha">2011 - Actualidad</span>
+                        <p>Responsable del soporte a usuarios, administración de servidores y virtualización, gestión de políticas de seguridad, manejo y mantenimiento de Active Directory, infraestructura de redes y Bakups.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Responsabe Area IT</h4>
+                        <span class="casa">Clinica de Ojos Dr. Lodolo</span>
+                        <span class="fecha">2019 - Actualidad</span>
+                        <p>Responsable del soporte a usuarios, administración de servidores y virtualización, gestión de políticas de seguridad, manejo y mantenimiento de Active Directory, infraestructura de redes y Bakups.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Tecnico Reparador</h4>
+                        <span class="casa">Sonotest</span>
+                        <span class="fecha">2008 - 2011</span>
+                        <p>Técnico reparador de PC, instalación de S.O, mantenimiento de equipos</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>MR INFORMATICA</h3>
+                        <p>Soluciones Informaticas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>SOPORTE IT</h3>
+                        <p>Asesoramiento y soporte tecnico</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>DESARROLLO WEB</h3>
+                        <p>Aplicaciones y páginas WEB</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Ciberseguridad</h3>
+                        <p>Proteja sus datos y la integridad de los recursos informáticos conectados</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Cloud Computing</h3>
+                        <p>Almacenamiento de datos, Big data y recupercacion de la información</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Backup</h3>
+                        <p>Prevencion de riegos, copias de seguridad a mayor o menor escala</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="contactForm">
+                        <input type="text" name="nombre" placeholder="Tú Nombre" required>
+                        <input type="text" name="telefono" placeholder="Número telefónico" required>
+                        <input type="email" name="correo" placeholder="Dirección de correo" required>
+                        <input type="text" name="tema" placeholder="Tema" required>
+                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://www.linkedin.com/in/matias-rodriguez-7a23551b4"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/+543434567106?text=Contactate"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        emailjs.init("5xH3EvIz3Dl0ZAKFU");
+    })();
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
+
+    // Recoger los datos del formulario
+    const formData = {
+        nombre: this.nombre.value,
+        telefono: this.telefono.value,
+        correo: this.correo.value,
+        tema: this.tema.value,
+        mensaje: this.mensaje.value,
+    };
+
+    emailjs.send("service_q5efa8m", "template_av4zncn", formData)
+    .then(function(response) {
+        // Mostrar mensaje de éxito al usuario
+        alert("Su mensaje ha sido enviado exitosamente. Nos pondremos en contacto con usted a la brevedad. ¡Gracias!");
+    }, function(error) {
+        // Mostrar mensaje de error si algo falla
+        alert("Hubo un error al enviar su mensaje. Por favor, intente nuevamente-.");
+    });
+    });
+</script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCpbectePv3F07HbQ3qow3QHVWd61l8Jp0",
+      authDomain: "portfolio-a1e30.firebaseapp.com",
+      projectId: "portfolio-a1e30",
+      storageBucket: "portfolio-a1e30.appspot.com",
+      messagingSenderId: "1060765656391",
+      appId: "1:1060765656391:web:d978f0ee4deb6b89d85862",
+      measurementId: "G-LZWG1VK090"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
